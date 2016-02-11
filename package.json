@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/AnnaBlackwell/Week2GroupProject#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "dotenv": "^2.0.0"
   }
 }
