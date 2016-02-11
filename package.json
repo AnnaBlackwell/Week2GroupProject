@@ -16,7 +16,8 @@
     "url": "https://github.com/AnnaBlackwell/Week2GroupProject/issues"
   },
   "homepage": "https://github.com/AnnaBlackwell/Week2GroupProject#readme",
-  "devDependencies": {
+  "dependencies": {
+    "express": "^4.13.4",
     "dotenv": "^2.0.0"
   }
 }
