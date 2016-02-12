@@ -29,6 +29,7 @@ export const postAddress = (address) => {
 //event listener for submit button
 export const listen = () => {
 	$('#submit-button').click(() => {
+		console.log('clicked')
 		postAddress()
 	})
 }

@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/AnnaBlackwell/Week2GroupProject#readme",
   "dependencies": {
-    "express": "^4.13.4",
-    "dotenv": "^2.0.0"
+    "body-parser": "^1.15.0",
+    "dotenv": "^2.0.0",
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "watchify": "^3.7.0"
   }
 }
