@@ -21,14 +21,15 @@ export const postAddress = (address) => {
 		.post("http://localhost:3000/addresses")
 		.end((err, res) => {
 		console.log(res.body)
-			// res.body = {}
-			console.log('Submitting new address')
+		// res.body = {}
+		console.log('Submitting new address')
 	})
 }
 
 //event listener for submit button
 export const listen = () => {
 	$('#submit-button').click(() => {
+		console.log('click')
 		postAddress()
 	})
 }
