@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+    "name": "fred",
+    "address": "10 Chruch st"
+    },
+    {
+    "name": "susie",
+    "address": "10 Chruch st"
+    }
+
+  ]
+}
