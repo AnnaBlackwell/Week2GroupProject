@@ -7,7 +7,7 @@ var utils = require('./lib')
 var app = express()
 
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.bodyParser());
+app.use(bodyParser());
 
 // Listen for requests
 var port = process.env.PORT || 3000

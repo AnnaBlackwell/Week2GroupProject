@@ -33,3 +33,5 @@ export const listen = () => {
 		postAddress()
 	})
 }
+
+modules.export = {getAddresses, postAddress, listen}
