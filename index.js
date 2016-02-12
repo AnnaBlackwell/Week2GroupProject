@@ -2,6 +2,7 @@ var express = require('express')
 var fs = require('fs')
 var path = require('path')
 var bodyParser = require('body-parser')
+var utils = require('./lib')
 
 var app = express()
 

@@ -4,11 +4,16 @@
     <meta content="text/html; charset=utf-8">
     <title>Address Book</title>
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="bundle.js"></script>
   </head>
   <body>
+<<<<<<< HEAD
   	<p>This is a mapping API</p>
 
+=======
+    <p>This is a mapping API</p>
+    
+>>>>>>> 32e9ecf172d0270b4f3f7d5e40b8584723175384
     <div id="input-fields">
       <form>
           First name: <input type="text" name="fname"><br>
@@ -43,13 +48,17 @@
                     id="country" disabled="true"></input></td>
             </tr>
           </table>
-          <input type="submit" value="Submit">
+          <input id="submit-button" type="submit" value="Submit">
       </form>
     </div>
 
     <div id="map">
         <!-- map goes in here -->
     </div>
+    <script type="text/javascript" src="../index.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgQIfIyiqmVYypmwGfTO2ykxp6nBikWCU&libraries=places"></script>
+    <script async defer
+     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgQIfIyiqmVYypmwGfTO2ykxp6nBikWCU&callback=initMap">
+   </script>
   </body>
 </html>
