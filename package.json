@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "watchify index.js -o public/bundle.js -dv",
+    "watch": "watchify ./client/ajax.js -o public/bundle.js -dv",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
