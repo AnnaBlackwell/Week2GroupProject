@@ -1,4 +1,4 @@
-var request = require ('superagent')
+var request = require('superagent')
 var jquery = require('jquery')
 
 var address = {
