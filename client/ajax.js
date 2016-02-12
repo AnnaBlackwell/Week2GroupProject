@@ -7,17 +7,17 @@ var address = {
 }
 
 //get request for array of addresses in database
-export var getAddresses = function (callback) {
+var getAddresses = function (callback) {
 	request
 		.get("http://localhost:3000/addresses")
 		.end(function(err, res) {
 			callback(res.body)
-			console.log('Getting addresses'))
-	}
+			console.log('Getting addresses')
+	})
 }
 
 //post request to localhost:3000/addresses
-export var postAddress = function(address) {
+var postAddress = function(address) {
 	request
 		.post("http://localhost:3000/addresses")
 		.end(function(err, res) {
@@ -28,11 +28,11 @@ export var postAddress = function(address) {
 }
 
 //event listener for submit button
-export var listen = function() {
+var listen = function() {
 	$('#submit-button').click(function() {
 		console.log('click')
 		postAddress()
 	})
 }
 
-modules.export = {getAddresses, postAddress, listen}
+module.exports = {getAddresses, postAddress, listen}
