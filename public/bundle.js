@@ -1,1 +1,0 @@
-console.error("\n/Users/annablackwell/workspace/Week2GroupProject/client/ajax.js:1\nimport request from 'superagent'\n^\nParseError: 'import' and 'export' may appear only with 'sourceType: module'");
