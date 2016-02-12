@@ -1,7 +1,15 @@
-var app = require('./server')
+var express = require('express')
+var fs = require('fs')
+var app = express()
+var path = require('path')
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Listen for requests
 
 var port = process.env.PORT || 3000
 
-app.listen(port, () => {
-  console.log('Server running on port %d', port)
-})
+app.listen(port, function() {
+
+  console.log('server running on port ' + port);
+});
