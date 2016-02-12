@@ -3,7 +3,9 @@ var fs = require('fs')
 var path = require('path')
 var bodyParser = require('body-parser')
 var utils = require('./lib')
-
+var getAddresses = require('./client/ajax.js').getAddresses
+var postAddress = require('./client/ajax.js').postAddress
+var listen = require('./client/ajax.js').listen
 var app = express()
 
 app.use(express.static(path.join(__dirname, 'public')));
