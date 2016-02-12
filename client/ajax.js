@@ -1,25 +1,26 @@
-import request from 'superagent'
+var request = require ('superagent')
+var jquery = require('jquery')
 
-const address = {
+var address = {
 	Name: "Joe Blogs",
 	Address: "10 Church Street, Wellington"
 }
 
 //get request for array of addresses in database
-export const getAddresses = (callback) => {
+export var getAddresses = function (callback) {
 	request
 		.get("http://localhost:3000/addresses")
-		.end((err, res) => {
+		.end(function(err, res) {
 			callback(res.body)
 			console.log('Getting addresses'))
 	}
 }
 
 //post request to localhost:3000/addresses
-export const postAddress = (address) => {
+export var postAddress = function(address) {
 	request
 		.post("http://localhost:3000/addresses")
-		.end((err, res) => {
+		.end(function(err, res) {
 		console.log(res.body)
 		// res.body = {}
 		console.log('Submitting new address')
@@ -27,9 +28,11 @@ export const postAddress = (address) => {
 }
 
 //event listener for submit button
-export const listen = () => {
-	$('#submit-button').click(() => {
+export var listen = function() {
+	$('#submit-button').click(function() {
 		console.log('click')
 		postAddress()
 	})
 }
+
+modules.export = {getAddresses, postAddress, listen}
